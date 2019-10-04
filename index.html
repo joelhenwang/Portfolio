@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, 
+                                initial-scale=1">
+                                
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        max-width: 1280px;
+        background-image: url(https://images.pexels.com/photos/963278/pexels-photo-963278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    }
+
+    .header {
+        padding: 40px;
+        text-align: center;
+        background: rgb(59, 128, 131);
+        color: whitesmoke;
+        font-size: 150%;
+    }
+
+    .links-bar{
+        overflow: hidden;
+        padding: 10px;
+        background: #2e2e2e;
+    }
+    .links-bar a{
+        float: right;
+        text-align: center;
+        color:  rgb(59, 128, 131);
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .links-bar a:hover{
+        color: white;
+    }
+
+    .row{
+        content: "";
+        display: flex;
+        clear: both;
+
+    }
+
+    .column{
+        float: left;
+        padding: 10px;
+        
+    }
+
+    .left{
+        width: 30%;
+        background: black;
+        color: aliceblue;
+        font-size: 120%;
+    }
+
+    .right{
+        width: 70%;
+        background: whitesmoke;
+        color: black;
+        font-size: 130%
+    }
+
+    .container {
+    max-width: 600px;
+    display: flex;}
+    
+    .image {
+        width: 50%;
+        object-fit: contain;
+        align-self: flex-start;
+        height: auto;
+        opacity: 0.3;
+        border:4px solid #2e2e2e;
+    }
+
+    .image:hover{
+        opacity: 1;
+    }
+
+    .text {
+        margin-left: 5px;
+        flex: 1 1 auto;
+    }
+
+    .footer {
+        padding: 10px;
+        background: #2e2e2e;
+        text-align: center;
+    }
+
+    .footer a{
+        color:whitesmoke;
+        text-decoration: none!important;
+    }
+
+    .button{
+        background-color: gray;
+        border:none;
+        float: left;
+
+        
+    }
+
+    .disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+
+    @media screen and (max-width: 600px) {
+        .row {
+            flex-direction:column
+        }
+        .column{
+            width: 100%
+        }
+    }
+    
+</style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <h1>My Portfolio</h1>
+        <h5>Aspiring Software Developer</h5>
+    </div>
+
+    <a name="top"></a>
+
+    <div class="links-bar">
+        <a href="https://github.com/joelhenwang" target="_blank" class="fa fa-github" style="font-size: 1.5em"></a>
+        <a href="https://www.linkedin.com/in/joel-wang-194717190/" target="_blank" class="fa fa-linkedin" style="font-size: 1.5em"></a>
+        <a href="CV.html" style="margin-top: 2px; font-weight: 900;float: left;margin-left: 1px">CV</a>
+        
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <h2>About Me</h2>
+            <p> Hi! My name is Joel Wang, I'm a Electronics and Computer Science 
+                college student with great desire to learn and
+                create whatever requested application. Friendly and
+                cooperative, ready to tackle any kind of problems
+                by myself or with a team.
+
+            </p>
+            <h3>Skills</h3>
+            <ul>
+                <li>C</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+
+        <div class="column right">
+            <h2>Projects</h2>
+            <h4>Project A</h4>
+            <div class="container">
+                <img class ="image" src="https://cdn.theatlantic.com/assets/media/img/photo/2018/03/the-strange-beauty-of-sandstorms/s01_986634452/main_1500.jpg?1522173998"
+                >
+                
+                <div class="text">
+                    This is going to be my most accomplished 
+                    project made by me. Reason why it is at the
+                    top.
+                    
+                </div>
+            </div>      
+            <button class="button disabled">Code</button>
+            <button class="button disabled">Demo</button>
+
+            <h4>Project B</h4>
+            <div class="container">
+                <img class ="image" src="https://cdn.theatlantic.com/assets/media/img/photo/2018/03/the-strange-beauty-of-sandstorms/s01_986634452/main_1500.jpg?1522173998"
+                >
+                <div class="text">
+                    This is going to be a project different from A,
+                    but not as powerful/versatile/useful. It is here 
+                    to show my skills on other kind of stuff.
+                    
+                </div>
+            </div>
+            <button class="button disabled">Code</button>
+            <button class="button disabled">Demo</button>
+            <h4>Project C</h4>
+            <div class="container">
+                <img class ="image" src="https://i.redd.it/toe2nh2zo5831.jpg"
+                >
+                <div class="text">
+                    This most likely will be project relationed with
+                    a hobby of mine. Probably maybe something to do with
+                    keyboards/football/gaming
+                    
+                </div>
+            </div>
+            <button class="button disabled">Code</button>
+            <button class="button disabled">Demo</button>
+            <h5>etc...</h3>
+        </div>
+
+        
+
+    </div>
+
+    <div class="footer">
+            <a href="#top">Back to Top</a> 
+    </div>
